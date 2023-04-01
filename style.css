@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Pathway+Gothic+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(rgb(142, 167, 190),rgb(167, 125, 164));
+    height: fit-content;
+}
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+.info{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+#reset{
+    background-color: rgb(218, 168, 199);
+    border: none;
+    padding: 10px 20px;
+    display: block;
+    margin:10px auto;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#reset:active{
+    background-color: rgb(189, 84, 142);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+}
+.box{
+    border: 2px solid black;
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(167, 125, 164);
+}
+.gameInfo{
+    padding: 0 35px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+.imgBox img{
+    width:0;
+    transition: width 1s ease-in-out;
+    display:block;
+    margin: 20px auto;
+}
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+@media screen and (max-width:480px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,80px);
+        grid-template-rows: repeat(3,80px);
+    }
+    h1{
+        font-size: 40px;
+    }
+    .box{
+        font-size: 80px;
+    }
+}
